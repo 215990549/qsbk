@@ -5,9 +5,9 @@
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
-    "backgroundColor": "#F8F8F8"
+    "navigationBarTitleText": "仿糗事百科",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#F76260"
   },
   "usingComponents": {}
 }

@@ -3,14 +3,14 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				
 			}
 		}
 	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarTextStyle": "black",// 标题文字颜色
+		"navigationBarTitleText": "仿糗事百科",// 标题文字
+		"navigationBarBackgroundColor": "#fff",// 导航栏背景颜色
+		"backgroundColor": "#F76260"// 窗口的背景色
 	}
 }
