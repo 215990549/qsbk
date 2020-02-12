@@ -1,1 +1,0 @@
-<view class="content"><image class="logo" src="/static/logo.png"></image><view class="text-area"><text class="title">{{title}}</text></view><label class="_span">矢量图片测试</label><button type="primary" data-event-opts="{{[['tap',[['animate',['$event']]]]]}}" bindtap="__e">动画测试</button><view hidden="{{!(animateFlag)}}" class="icon iconfont icon-pic animated bounceIn"></view></view>

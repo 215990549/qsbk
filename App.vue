@@ -17,7 +17,7 @@
 	/* 官方CSS文件 */
 	@import './common/uni.css';
 	/* 矢量图库 */
-	@import './common/icon.css';
+	@import './common/iconfont.css';
 	/* 动画库 */
 	@import './common/animate.css';
 </style>
