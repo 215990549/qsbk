@@ -20,4 +20,6 @@
 	@import './common/iconfont.css';
 	/* 动画库 */
 	@import './common/animate.css';
+	/* 自定义公共CSS样式 */
+	@import url("./common/common.css");
 </style>

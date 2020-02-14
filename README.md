@@ -22,5 +22,4 @@
 
 - ## 图文列表
 
-  - 头像图片（http://b-ssl.duitang.com/uploads/item/201707/26/20170726102254_J4MH5.jpeg）
-  - 详情图片（https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3313838802,2768404782&fm=26&gp=0.jpg）
+- ## 滚动tab导航
