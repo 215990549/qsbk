@@ -3,90 +3,127 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"app-plus":{
-					"scrollIndicator":"none",
-					"titleNView":{
+				"app-plus": {
+					"scrollIndicator": "none",
+					"titleNView": {
 						// 搜索框
-						"searchInput":{
-							"align":"center",
-							"backgroundColor":"#F7F7F7",
-							"placeholderColor":"#CCCCCC",
+						"searchInput": {
+							"align": "center",
+							"backgroundColor": "#F7F7F7",
+							"placeholderColor": "#CCCCCC",
 							"borderRadius": "4px",
-							"placeholder":"搜索糗事",
-							"disabled":"false"
+							"placeholder": "搜索糗事",
+							"disabled": "true"
 						},
-						"buttons":[
+						"buttons": [
 							// 左按钮
 							{
-								"float":"left",
-								"color":"#FF9619",
-								"colorPressed":"#BBBBBB",
-								"fontSize":"22px",
-								"fontSrc":"./static/font/icon.ttf",
-								"text":"\ue607"
+								"float": "left",
+								"color": "#FF9619",
+								"colorPressed": "#BBBBBB",
+								"fontSize": "22px",
+								"fontSrc": "./static/font/icon.ttf",
+								"text": "\ue607"
 							},
 							// 右按钮
 							{
-								"float":"right",
-								"color":"#000000",
-								"colorPressed":"#BBBBBB",
-								"fontSize":"22px",
-								"fontSrc":"./static/font/icon.ttf",
-								"text":"\ue609"
+								"float": "right",
+								"color": "#000000",
+								"colorPressed": "#BBBBBB",
+								"fontSize": "22px",
+								"fontSrc": "./static/font/icon.ttf",
+								"text": "\ue609"
+							}
+						]
+					}
+				}
+			}
+		}, {
+			"path": "pages/news/news",
+			"style": {}
+		}, {
+			"path": "pages/paper/paper",
+			"style": {}
+		}, {
+			"path": "pages/home/home",
+			"style": {}
+		}, {
+			"path": "pages/search/search",
+			"style": {
+				"app-plus": {
+					"scrollIndicator": "none",
+					"titleNView": {
+						"autoBackButton":false,
+						// 搜索框
+						"searchInput": {
+							"align": "center",
+							"backgroundColor": "#F7F7F7",
+							"placeholderColor": "#CCCCCC",
+							"borderRadius": "4px",
+							"placeholder": "搜索糗事",
+							"disabled": "false"
+						},
+						"buttons": [
+							// 右按钮
+							{
+								"float": "right",
+								"color": "#000000",
+								"colorPressed": "#BBBBBB",
+								"fontSize": "16px",
+								"text": "取消"
 							}
 						]
 					}
 				}
 			}
 		}
-	    ,{
-            "path" : "pages/news/news",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/paper/paper",
-            "style" : {}
-        }
-        ,{
-            "path" : "pages/home/home",
-            "style" : {}
-        }
-    ],
+	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",// 标题文字颜色
-		"navigationBarTitleText": "仿糗事百科",// 标题文字
-		"navigationBarBackgroundColor": "#fff",// 导航栏背景颜色
-		"backgroundColor": "#F76260"// 窗口的背景色
+		"navigationBarTextStyle": "black", // 标题文字颜色
+		"navigationBarTitleText": "仿糗事百科", // 标题文字
+		"navigationBarBackgroundColor": "#fff", // 导航栏背景颜色
+		"backgroundColor": "#F76260" // 窗口的背景色
 	},
-	"tabBar":{
-		"color":"#B7B7B7",
-		"selectedColor":"#FEE741",
-		"backgroundColor":"#FFFFFF",
-		"borderStyle":"black",
-		"list":[
-			{
-				"pagePath":"pages/index/index",
-				"text":"糗事",
-				"iconPath":"static/img/tabBar/index.png",
-				"selectedIconPath":"static/img/tabBar/indexed.png"
+	"tabBar": {
+		"color": "#B7B7B7",
+		"selectedColor": "#FEE741",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "糗事",
+				"iconPath": "static/img/tabBar/index.png",
+				"selectedIconPath": "static/img/tabBar/indexed.png"
 			},
 			{
-				"pagePath":"pages/news/news",
-				"text":"动态",
-				"iconPath":"static/img/tabBar/news.png",
-				"selectedIconPath":"static/img/tabBar/newsed.png"
+				"pagePath": "pages/news/news",
+				"text": "动态",
+				"iconPath": "static/img/tabBar/news.png",
+				"selectedIconPath": "static/img/tabBar/newsed.png"
 			},
 			{
-				"pagePath":"pages/paper/paper",
-				"text":"小纸条",
-				"iconPath":"static/img/tabBar/paper.png",
-				"selectedIconPath":"static/img/tabBar/papered.png"
+				"pagePath": "pages/paper/paper",
+				"text": "小纸条",
+				"iconPath": "static/img/tabBar/paper.png",
+				"selectedIconPath": "static/img/tabBar/papered.png"
 			},
 			{
-				"pagePath":"pages/home/home",
-				"text":"我的",
-				"iconPath":"static/img/tabBar/home.png",
-				"selectedIconPath":"static/img/tabBar/homeed.png"
+				"pagePath": "pages/home/home",
+				"text": "我的",
+				"iconPath": "static/img/tabBar/home.png",
+				"selectedIconPath": "static/img/tabBar/homeed.png"
+			}
+		]
+	},
+	"condition": {
+		"current": 0,
+		"list": [{
+				"name": "首页",
+				"path": "pages/index/index"
+			},
+			{
+				"name": "搜索页",
+				"path": "pages/search/search"
 			}
 		]
 	}

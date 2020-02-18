@@ -1,3 +1,4 @@
+<!-- 横向滚动顶部导航栏组件 -->
 <template>
 	<view class="uni-tab-bar">
 		<scroll-view scroll-x="true" class="uni-swiper-tab">

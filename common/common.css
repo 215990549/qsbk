@@ -1,0 +1,18 @@
+.f-jBetween {
+	/* 主轴方向两边对齐 */
+	display: flex;
+	justify-content: space-between;
+}
+
+.f-aCenter {
+	/* 侧轴方向居中对齐 */
+	display: flex;
+	align-items: center;
+}
+
+.f-jCenter-aCenter {
+	/* 水平垂直居中 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
