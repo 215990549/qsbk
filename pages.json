@@ -1,4 +1,5 @@
 {
+	// 页面配置
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
@@ -77,13 +78,23 @@
 				}
 			}
 		}
-	],
+	    ,{
+			"path" : "pages/add-input/add-input",
+			"style" : {
+				"app-plus":{
+					"titleNView":false
+				}
+			}
+        }
+    ],
+	 // 全局样式
 	"globalStyle": {
 		"navigationBarTextStyle": "black", // 标题文字颜色
 		"navigationBarTitleText": "仿糗事百科", // 标题文字
 		"navigationBarBackgroundColor": "#fff", // 导航栏背景颜色
 		"backgroundColor": "#F76260" // 窗口的背景色
 	},
+	// 底部导航栏
 	"tabBar": {
 		"color": "#B7B7B7",
 		"selectedColor": "#FEE741",
@@ -115,8 +126,9 @@
 			}
 		]
 	},
+	// 测试页面
 	"condition": {
-		"current": 0,
+		"current": 2,
 		"list": [{
 				"name": "首页",
 				"path": "pages/index/index"
@@ -124,6 +136,10 @@
 			{
 				"name": "搜索页",
 				"path": "pages/search/search"
+			},
+			{
+				"name": "发布页",
+				"path": "pages/add-input/add-input"
 			}
 		]
 	}

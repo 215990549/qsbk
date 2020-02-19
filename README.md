@@ -42,3 +42,12 @@
 - 取消按钮
 - 监听文本框变化
 - 监听点击搜索按钮事件
+
+## 发布页开发(add-input)
+
+- 禁用原生导航
+- 开发自定义导航栏
+	- uni-icon
+	- uni-nav-bar（导航栏组件）
+	- uni-status-bar（状态栏占位组件）
+	- uni.showActionSheet

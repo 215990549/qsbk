@@ -1,3 +1,4 @@
+<!-- 首页 -->
 <template>
 	<view class="index">
 		<tab-bar :list="tabBarList" :active="current" @swiperChange="swiperChange"></tab-bar>
@@ -431,6 +432,13 @@ export default {
 			url:"../search/search"
 		})
 		
+	},
+	onNavigationBarButtonTap(e) {
+		if(e.index == 1){
+			uni.navigateTo({
+				url:"../add-input/add-input"
+			})
+		}
 	},
 	methods: {
 		swiperChange(e) {
