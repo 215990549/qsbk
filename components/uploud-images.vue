@@ -33,7 +33,7 @@
 	</view>
 </template>
 <script>
-	import permision from "@/common/permission.js"
+	import permision from "../common/permission.js"
 	var sourceType = [
 		['camera'],
 		['album'],
@@ -47,7 +47,6 @@
 	export default {
 		data() {
 			return {
-				imageList: [],
 				sourceTypeIndex: 2,
 				sourceType: ['拍照', '相册', '拍照或相册'],
 				sizeTypeIndex: 2,
@@ -55,6 +54,9 @@
 				countIndex: 8,
 				count: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 			}
+		},
+		props:{
+			imageList: Array
 		},
 		onUnload() {
 			this.imageList = [],
@@ -90,7 +92,7 @@
 					count: this.imageList.length + this.count[this.countIndex] > 9 ? 9 - this.imageList.length : this.count[this.countIndex],
 					success: (res) => {
 						this.imageList = this.imageList.concat(res.tempFilePaths);
-						this.$emit("upload",this.imageList)
+						this.$emit("update:imageList",this.imageList)
 					},
 					fail: (err) => {
 						// #ifdef APP-PLUS
@@ -185,7 +187,7 @@
 			// 删除图片
 			delectImg(i){
 				this.imageList.splice(i,1)
-				this.$emit("upload",this.imageList)
+				this.$emit("update:imageList",this.imageList)
 			}
 		}
 	}

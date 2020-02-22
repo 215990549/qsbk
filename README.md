@@ -51,3 +51,11 @@
 	- uni-nav-bar（导航栏组件）
 	- uni-status-bar（状态栏占位组件）
 	- uni.showActionSheet
+- textarea组件(多行输入框)
+- 开发上传多图组件
+	- 增加删除功能
+- 开发弹出公告
+  - uni-popup 
+- 开发保存功能
+  - onBackPress生命周期函数
+  - uni.showModal API
